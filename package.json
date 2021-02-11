@@ -1,6 +1,6 @@
 {
-  "name": "ts-monorepo",
-  "description": "Template for setting up a TypeScript monorepo",
+  "name": "@saraswati-js/utilities",
+  "description": "A monorepo of all the saraswati-js utilities used by the rest of the organization",
   "private": true,
   "workspaces": [
     "packages/*",
