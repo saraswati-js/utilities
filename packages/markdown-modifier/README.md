@@ -19,7 +19,7 @@ This will be best as a remark plugin but I don't want to put the effort into tha
 - [ ] Add actual tests
 
 ```
-markdown rebuimodifierlder
+markdown modifier
   - image files
   - imports
     - local
