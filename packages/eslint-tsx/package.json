@@ -1,0 +1,35 @@
+{
+  "name": "@saraswati-js/eslint-config-tsx",
+  "version": "8.0.4",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "saraswati-js TSX lint",
+  "keywords": [
+    "eslint",
+    "config",
+    "typescript",
+    "react"
+  ],
+  "author": "Andric LibreSinn",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NiGhTTraX/eslint-config.git"
+  },
+  "scripts": {
+    
+  },
+  "dependencies": {
+    "@nighttrax/eslint-config-react": "^6.0.0",
+    "@nighttrax/eslint-config-ts": "^8.0.3"
+  },
+  "peerDependencies": {
+    "eslint": "^7.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.0.0",
+    "typescript": "^4.0.0"
+  }
+}

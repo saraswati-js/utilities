@@ -1,0 +1,36 @@
+{
+  "name": "@saraswati-js/eslint-config-ts",
+  "version": "8.0.3",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "NiGhTTraX's ESLint config for TS libs",
+  "keywords": [
+    "eslint",
+    "config",
+    "typescript"
+  ],
+  "author": "Andrei Picus <NiGhTTraX@users.noreply.github.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NiGhTTraX/eslint-config.git"
+  },
+  "scripts": {
+    "test": "../../test.sh mugshot ts"
+  },
+  "dependencies": {
+    "@nighttrax/eslint-config-base": "^7.1.0",
+    "@typescript-eslint/eslint-plugin": "~4.12.0",
+    "@typescript-eslint/parser": "~4.12.0",
+    "eslint-import-resolver-typescript": "~2.3.0"
+  },
+  "peerDependencies": {
+    "eslint": "^7.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.0.0",
+    "typescript": "^4.0.0"
+  }
+}

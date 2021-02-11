@@ -1,0 +1,29 @@
+{
+  "name": "@saraswati-js/eslint-config-react",
+  "version": "6.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "NiGhTTraX's ESLint config for React components",
+  "keywords": [
+    "eslint",
+    "config",
+    "react"
+  ],
+  "author": "Andrei Picus <NiGhTTraX@users.noreply.github.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NiGhTTraX/eslint-config.git"
+  },
+  "dependencies": {
+    "eslint-config-airbnb": "~18.2.1",
+    "eslint-plugin-jsx-a11y": "~6.4.1",
+    "eslint-plugin-react": "~7.22.0",
+    "eslint-plugin-react-hooks": "~4.2.0"
+  },
+  "peerDependencies": {
+    "eslint": "^7.0.0"
+  }
+}

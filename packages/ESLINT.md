@@ -1,0 +1,1 @@
+I'm copying `NiGhTTraX`'s eslint for now to learn how to do it. Then I will add in my own rules as to how I like them applied.
