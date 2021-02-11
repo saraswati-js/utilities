@@ -1,0 +1,20 @@
+{
+  "name": "@saraswati-js/markdown-modifier",
+  "version": "2.0.0",
+  "description": "Read markdown and modify it for ... purposes",
+  "license": "MIT",
+  "repository": "saraswati-js/markdown-modifier",
+  "bugs": "https://github.com/saraswati-js/markdown-modifier/issues",
+  "scripts": {
+    "tests:live": "nodemon ./tests/live.js"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.2",
+    "md5-file": "^5.0.0",
+    "mime": "^2.3.1",
+    "mkdirp": "^1.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

@@ -1,0 +1,8 @@
+--- 
+  requires:
+    title: frontmatter requires a title
+  warnings:
+    routes: file is missing default route. One was generated.
+    slug: file is missing slug. One was generated.
+    tags: file is missing tags. One was generated.
+    project: file is missing project. One was generated.

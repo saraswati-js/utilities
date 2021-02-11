@@ -1,0 +1,28 @@
+{
+  "name": "@saraswati-js/markdown-finder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "demo": "./demo.js",
+    "save-todos": "leasot -x --reporter markdown './**/*.js' -i 'node_modules/**/*' > TODO.md",
+    "live:tests": "nodemon -e js,md ./example/live-tests.js",
+    "start:dev": "nodemon -e js,md ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "front-matter-markdown": "^0.4.4",
+    "klaw-sync": "^6.0.0",
+    "leasot": "^10.4.0",
+    "remark-stringify": "^9.0.1",
+    "uuid": "^8.0.0",
+    "yaml": "^1.9.2"
+  },
+  "devDependencies": {
+    "clipboardy": "^2.3.0",
+    "nodemon": "^2.0.2"
+  }
+}
