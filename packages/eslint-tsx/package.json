@@ -11,6 +11,9 @@
     "typescript",
     "react"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Andric LibreSinn",
   "license": "MIT",
   "main": "index.js",

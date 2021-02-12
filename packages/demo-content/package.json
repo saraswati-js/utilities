@@ -12,6 +12,9 @@
     "gen:guide": "exit 1",
     "gen:random": "exit 1"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/saraswati-js/demo-content.git"

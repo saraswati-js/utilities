@@ -10,6 +10,9 @@
     "config",
     "react"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Andrei Picus <NiGhTTraX@users.noreply.github.com>",
   "license": "MIT",
   "main": "index.js",
