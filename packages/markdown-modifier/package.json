@@ -1,6 +1,6 @@
 {
   "name": "@saraswati-js/markdown-modifier",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Read markdown and modify it for ... purposes",
   "license": "MIT",
   "repository": "saraswati-js/markdown-modifier",
@@ -27,7 +27,7 @@
     "yargs": "^16.2.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7",
-    "@saraswati-js/demo-content": "^1.0.1"
+    "@saraswati-js/demo-content": "^1.0.6",
+    "nodemon": "^2.0.7"
   }
 }
