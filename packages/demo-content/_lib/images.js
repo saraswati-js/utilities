@@ -4,7 +4,6 @@
 const path = require('path')
 const { copyFileSync, readdirSync } = require('fs')
 
-const DIR = path.join(__dirname, 'static')
 const mediaPath = path.join(__dirname, '..', 'media')
 
 /**
