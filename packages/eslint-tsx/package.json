@@ -1,6 +1,6 @@
 {
   "name": "@saraswati-js/eslint-config-tsx",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "publishConfig": {
     "access": "public"
   },
@@ -11,9 +11,6 @@
     "typescript",
     "react"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
   "author": "Andric LibreSinn",
   "license": "MIT",
   "main": "index.js",

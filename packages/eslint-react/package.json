@@ -1,6 +1,6 @@
 {
   "name": "@saraswati-js/eslint-config-react",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "publishConfig": {
     "access": "public"
   },
@@ -10,9 +10,6 @@
     "config",
     "react"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
   "author": "Andrei Picus <NiGhTTraX@users.noreply.github.com>",
   "license": "MIT",
   "main": "index.js",

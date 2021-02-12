@@ -1,6 +1,6 @@
 {
   "name": "@saraswati-js/eslint-config-base",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "publishConfig": {
     "access": "public"
   },
@@ -9,9 +9,6 @@
     "eslint",
     "config"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
   "author": "Andrei Picus <NiGhTTraX@users.noreply.github.com>",
   "license": "MIT",
   "main": "",
