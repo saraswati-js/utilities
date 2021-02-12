@@ -1,7 +1,7 @@
 {
   "name": "@saraswati-js/demo-content",
   "version": "1.0.2",
-  "description": "A collective of folders of markdown and the like to test against so as not to have it in other directories.",
+  "description": "A collective of folders of markdown and the like to test against so as not to have it in other directories",
   "main": "generate.js",
   "scripts": {
     "tmp:size": "clear; du -sh ./tmp",
