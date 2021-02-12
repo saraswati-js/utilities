@@ -1,6 +1,6 @@
 {
   "name": "@saraswati-js/eslint-config-tsx",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publishConfig": {
     "access": "public"
   },
@@ -18,9 +18,7 @@
     "type": "git",
     "url": "git+https://github.com/NiGhTTraX/eslint-config.git"
   },
-  "scripts": {
-    
-  },
+  "scripts": {},
   "dependencies": {
     "@nighttrax/eslint-config-react": "^6.0.0",
     "@nighttrax/eslint-config-ts": "^8.0.3"
