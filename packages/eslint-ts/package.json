@@ -1,6 +1,6 @@
 {
   "name": "@saraswati-js/eslint-config-ts",
-  "version": "8.0.3",
+  "version": "1.0.0",
   "publishConfig": {
     "access": "public"
   },
