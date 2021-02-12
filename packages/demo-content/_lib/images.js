@@ -12,9 +12,10 @@ const mediaPath = path.join(__dirname, '..', 'media')
  * @param {*} newpath 
  */
 const markdownImage = (image, dirToCopyTo) => {
-  copyFileSync(image, `${dirToCopyTo}/heroimage.png`, { overwrite: true })
+  const ext = path.extname(image)
+  copyFileSync(image, `${dirToCopyTo}/heroimage${ext}`, { overwrite: true })
   
-  return `![hero image](./heroimage.png)`
+  return `![hero image](./heroimage${ext})`
 }
 
 // Call the generate image function

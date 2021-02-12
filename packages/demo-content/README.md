@@ -10,7 +10,9 @@ To be used with `@saraswati-js` packages for easier development.
 * `demo-content --type=demo|component` (tbd)
 
 # TODO
-* https://unsplash.com/documentation#list-photos (download a shit of small images)
+* https://unsplash.com/documentation#list-photos
+	- download a shit of small images
+	- https://www.npmjs.com/package/markdown-table
 * Add imports (partials)
 	- Multiple
 	- Global

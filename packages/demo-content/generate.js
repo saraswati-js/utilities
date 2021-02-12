@@ -17,7 +17,7 @@ if (!yargs.argv.dir) {
   throw new Error('The --dir=./path/to/content argument is required')
 }
 
-const COUNT = yargs.argv.count || 10
+const COUNT = yargs.argv.count || 100
 const DIR = yargs.argv.dir
 const imaageList = images.imageList()
 
