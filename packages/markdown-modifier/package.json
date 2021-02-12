@@ -11,6 +11,7 @@
   "scripts": {
     "tests:live": "nodemon ./tests/live.js",
     "cleanup": "rm -rf ./.live-test-content",
+    "demo": "rm -rf .live-test-content/; yarn demo-content; node bin/find-and-modify.js --startdir=./.live-test-content/content --destdir=./.live-test-content/public",
     "demo-content": "demo-content --count=500 --dir=./.live-test-content/content; mkdir ./.live-test-content/public"
   },
   "publishConfig": {
