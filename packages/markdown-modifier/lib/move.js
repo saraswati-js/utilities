@@ -60,7 +60,7 @@ const regexReplace = (destination, dir) => (replace, meta, imagePath) => {
  */
 module.exports = (filereader) => (file, destination) => {
   const dir = path.resolve(path.parse(file).dir)
-  const fileContents = fs.readFileSync(file).toString()
+  const fileContents = filereader.readFileSync(file).toString()
 
   const { content, data, excerpt, orig } = gm(fileContents)
   const pattern = /(?:!\[(.*?)\]\((.*?)\))/ig

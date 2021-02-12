@@ -2,11 +2,11 @@ console.clear()
 
 // const fs = require('fs')
 const path = require('path')
-const { managed: { move, modify } } = require('../')
+const { managed: { move } } = require('../')
 const markdownFilePath = path.join(__dirname, './fixtures/foo.md')
 
 // Do move stuff
-const destinationBaseDir = path.join(__dirname, 'fixtures')
+const destinationBaseDir = path.join(__dirname, 'fixtures/images')
 move(markdownFilePath, destinationBaseDir)
 
 // Do modify stuff
