@@ -11,12 +11,10 @@ So a regex will be fine and is already pretty fast so that's good too.
 This will be best as a remark plugin but I don't want to put the effort into that. So it stays as such.
 
 ## TODO
-- [x] Embed images
-- [~] Move images
-  - Need to confirm
-- [ ] Convert to rollup
 - [ ] Convert to TypeScript
+- [ ] Build a dest thingy for TS
 - [ ] Add actual tests
+- [ ] Watch file changes on start directory
 
 ```
 markdown modifier
@@ -34,5 +32,8 @@ Figure out plan for how to do
   - Components
   - How to chunk components to specific pages/routes
 
-
-!<import>(https://via.placeholder.com/400)
+```js
+(?:!\<import\>\((.*?)\))
+!<import>(./some/file/path/markdown.md)
+!(import)[./some/file/path/markdown.md]
+```

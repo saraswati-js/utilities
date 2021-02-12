@@ -1,23 +1,33 @@
 {
   "name": "@saraswati-js/markdown-modifier",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Read markdown and modify it for ... purposes",
   "license": "MIT",
   "repository": "saraswati-js/markdown-modifier",
   "bugs": "https://github.com/saraswati-js/markdown-modifier/issues",
+  "bin": {
+    "markdown-modifier": "./bin/find-and-modify.js"
+  },
   "scripts": {
-    "tests:live": "nodemon ./tests/live.js"
+    "tests:live": "nodemon ./tests/live.js",
+    "cleanup": "rm -rf ./.live-test-content",
+    "demo-content": "demo-content --count=500 --dir=./.live-test-content/content; mkdir ./.live-test-content/public"
   },
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
+    "chalk": "^4.1.0",
+    "chokidar": "^3.5.1",
     "gray-matter": "^4.0.2",
+    "klaw": "^3.0.0",
     "md5-file": "^5.0.0",
     "mime": "^2.3.1",
-    "mkdirp": "^1.0.4"
+    "mkdirp": "^1.0.4",
+    "yargs": "^16.2.0"
   },
   "devDependencies": {
+    "@saraswati-js/demo-content": "^1.0.6",
     "nodemon": "^2.0.7"
   }
 }

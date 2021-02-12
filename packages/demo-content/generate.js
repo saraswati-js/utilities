@@ -17,16 +17,20 @@ if (!yargs.argv.dir) {
   throw new Error('The --dir=./path/to/content argument is required')
 }
 
-const COUNT = yargs.argv.count || 500
+const COUNT = yargs.argv.count || 10
 const DIR = yargs.argv.dir
+const imaageList = images.imageList()
+
 
 // Create a bunch of images to be copied over here.
 rimraf.sync(DIR)
 
-for (let i = 0; i < COUNT; i++) {
-  // Create the article path first.
+for (let i = 0; i < COUNT; i++) {  
+  // // Create the article path first.
   const pathconfig = urlpath()
   const deets = markdownPath(DIR, pathconfig.path)
+  const randomImage = imaageList[Math.floor(Math.random() * imaageList.length)]
+
   articleDir(deets.directory)
 
   const doc = markdown({
@@ -43,7 +47,7 @@ for (let i = 0; i < COUNT; i++) {
       // href: '',
       // git: '',
     }),
-    heroimage: images.markdownImage(deets.directory),
+    heroimage: images.markdownImage(randomImage, deets.directory),
     title: faker.lorem.words(3),
     body: bodycontent(20),
   })

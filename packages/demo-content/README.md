@@ -10,11 +10,18 @@ To be used with `@saraswati-js` packages for easier development.
 * `demo-content --type=demo|component` (tbd)
 
 # TODO
-* Cars content is generated
+* https://unsplash.com/documentation#list-photos (download a shit of small images)
+* Add imports (partials)
+	- Multiple
+	- Global
+	- Use URL Schemes
+* Different content types
+	* Generate components content
+		- Add the type flag
+	* Generate API content
 * Create a `Trampoline` function to replace the `while` loop
 	- https://t.ly/G90s
 	- https://www.xspdf.com/resolution/53855743.html
 * Make it typescript
-* Put it into a monorepo
-* Generate components content
-	- Add the type flag
+* Have a series of stock images to use so I'm not using a single image every time.
+	- Best to have 50 or so that it will randomly pick.
