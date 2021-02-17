@@ -65,5 +65,8 @@ module.exports = (filereader) => (file, destination) => {
   const { content, data, excerpt, orig } = gm(fileContents)
   const pattern = /(?:!\[(.*?)\]\((.*?)\))/ig
 
-  return content.replace(pattern, regexReplace(destination, dir))
+  return gm.stringify(
+    content.replace(pattern, regexReplace(destination, dir)),
+    data
+  )
 }

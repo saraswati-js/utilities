@@ -1,5 +1,6 @@
 .DS_Store
 .live-test-content
+tests/fixtures/images/
 
 test.md
 
