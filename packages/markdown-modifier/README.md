@@ -9,6 +9,8 @@ This will be best as a remark plugin but I don't want to put the effort into tha
 - [ ] Build a dest thingy for TS
 - [ ] Add actual tests
 - [ ] Watch file changes on start directory
+- [ ] `gray-matter` [reads it's own files](https://github.com/jonschlinkert/gray-matter#read) so I don't need to use `fs` manually. Use that. It's synchronous.
+  - 
 
 ```
 markdown modifier
