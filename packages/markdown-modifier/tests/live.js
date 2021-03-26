@@ -7,9 +7,10 @@ const fixture1 = path.join(__dirname, './fixtures/foo.md')
 const fixture2 = path.join(__dirname, './fixtures/foo-frontmatter.md')
 
 // Do move stuff
-const destinationBaseDir = path.join(__dirname, 'fixtures/images')
-const newcontent1 = move(fixture1, destinationBaseDir)
-const newcontent2 = move(fixture2, destinationBaseDir)
+const publicPath = path.join(__dirname, 'fixtures/images')
+const destPath = 'imagerz'
+const newcontent1 = move(fixture1, publicPath, destPath)
+const newcontent2 = move(fixture2, publicPath, destPath)
 
 // Look at the data and make sure it looks correct.
 // console.log(newcontent1)

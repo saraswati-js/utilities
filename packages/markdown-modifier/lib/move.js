@@ -4,7 +4,7 @@ const md5 = require('md5-file')
 const mkdirp = require('mkdirp')
 const gm = require('gray-matter')
 
-const regexReplace = (destination, dir) => (replace, meta, imagePath) => {
+const regexReplace = (destination, dir, finalDir) => (replace, meta, imagePath) => {
   const unchanged = `![${meta}](${imagePath})`
   const filePath = path.join(dir, imagePath)
   const fileExists = fs.existsSync(path.join(dir, imagePath))
@@ -24,7 +24,7 @@ const regexReplace = (destination, dir) => (replace, meta, imagePath) => {
   const newFile = split.join('/') + path.extname(imagePath)
   const intermediatePath = split.slice(0, split.length - 1).join('/')
   const finalImageName = split.slice(split.length - 1) + path.extname(imagePath)
-  const newDestination = [destination, intermediatePath]
+  const newDestination = [destination, finalDir, intermediatePath ]
   const finalFilePath = [...newDestination, finalImageName].join('/')
 
   mkdirp.sync(newDestination.join('/'))
@@ -58,7 +58,7 @@ const regexReplace = (destination, dir) => (replace, meta, imagePath) => {
  *   Images do not require inlining
  *   Super fast
  */
-module.exports = (filereader) => (file, destination) => {
+module.exports = (filereader) => (file, publicPath, destination = '') => {
   const dir = path.resolve(path.parse(file).dir)
   const fileContents = filereader.readFileSync(file).toString()
 
@@ -66,7 +66,7 @@ module.exports = (filereader) => (file, destination) => {
   const pattern = /(?:!\[(.*?)\]\((.*?)\))/ig
 
   return gm.stringify(
-    content.replace(pattern, regexReplace(destination, dir)),
+    content.replace(pattern, regexReplace(publicPath, dir, destination)),
     data
   )
 }
