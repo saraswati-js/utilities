@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-console.clear()
-
 const fs = require('fs')
 const klaw = require('klaw')
 const path = require('path')
@@ -10,10 +8,11 @@ const yargs = require('yargs')
 const { managed: { move } } = require('..')
 
 const START_DIR = yargs.argv.startdir
-const DEST_DIR = yargs.argv.destdir
+const PUBLIC_DIR = yargs.argv.public
+const DEST_DIR = yargs.argv.destdir || ''
 
 if (!START_DIR || !DEST_DIR) {
-  throw new Error('--startdir and--destdir are required. Example: markdown-modifier --startdir=./START --destdir=./DEST')
+  throw new Error('--startdir and--destdir are required. Example: markdown-modifier --startdir=./START --public=PUBLIC_DIR --destdir=./DEST_DIR')
 }
 
 klaw(START_DIR)
@@ -24,8 +23,9 @@ klaw(START_DIR)
     if (!extensions.includes(path.extname(item.path))) {
       return
     }
-    
-    const rebuilt = move(item.path, DEST_DIR)
+
+    const rebuilt = move(item.path, PUBLIC_DIR, DEST_DIR)
+
     fs.writeFileSync(item.path, rebuilt)
   })
   .on('end', () => {

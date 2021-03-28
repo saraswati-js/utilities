@@ -8,7 +8,7 @@ const regexReplace = (destination, dir, finalDir) => (replace, meta, imagePath) 
   const unchanged = `![${meta}](${imagePath})`
   const filePath = path.join(dir, imagePath)
   const fileExists = fs.existsSync(path.join(dir, imagePath))
-
+  
   // Don't replace external URLs
   if (!/^\.{1,2}\//.test(imagePath)) {
     return unchanged
@@ -30,7 +30,7 @@ const regexReplace = (destination, dir, finalDir) => (replace, meta, imagePath) 
   mkdirp.sync(newDestination.join('/'))
   fs.copyFileSync(filePath, finalFilePath)
 
-  return `![${meta}](/${newFile})`
+  return `![${meta}](/${finalDir}/${newFile})`
 }
 
 /**

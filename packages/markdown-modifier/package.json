@@ -4,7 +4,8 @@
   "description": "Read markdown and modify it for ... purposes",
   "license": "MIT",
   "repository": "saraswati-js/markdown-modifier",
-  "bugs": "https://github.com/saraswati-js/markdown-modifier/issues",
+  "homepage": "https://github.com/saraswati-js/utilities/tree/master/packages/markdown-finder",
+  "bugs": "https://github.com/saraswati-js/utilities/issues",
   "bin": {
     "markdown-modifier": "./bin/find-and-modify.js"
   },
