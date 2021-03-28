@@ -5,6 +5,7 @@
 This will be best as a remark plugin but I don't want to put the effort into that. So it stays as such.
 
 ## TODO
+- [ ] Rename this as it's kinda dumb.
 - [ ] Convert to TypeScript
 - [ ] Build a dest thingy for TS
 - [ ] Add actual tests
