@@ -26,7 +26,7 @@
     "url": "https://github.com/saraswati-js/demo-content/issues"
   },
   "bin": {
-    "demo-content": "./generate.js"
+    "@saraswati-js:content": "./generate.js"
   },
   "homepage": "https://github.com/saraswati-js/demo-content#readme",
   "dependencies": {

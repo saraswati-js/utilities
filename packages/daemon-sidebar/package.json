@@ -1,8 +1,10 @@
 {
-  "name": "@saraswati-js/markdown-finder",
+  "name": "@saraswati-js/daemon-sidebar",
   "version": "1.0.3",
   "description": "",
-  "main": "index.js",
+  "bin": {
+    "@saraswati-js:sidebar": "./index.js"
+  },
   "scripts": {
     "demo": "./demo.js",
     "save-todos": "leasot -x --reporter markdown './**/*.js' -i 'node_modules/**/*' > TODO.md",

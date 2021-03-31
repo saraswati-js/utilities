@@ -1,0 +1,23 @@
+{
+  "name": "@saraswati-js/daemon-tags",
+  "version": "1.0.5",
+  "description": "",
+  "license": "MIT",
+  "repository": "saraswati-js/markdown-modifier",
+  "homepage": "https://github.com/saraswati-js/utilities/tree/master/packages/markdown-finder",
+  "bugs": "https://github.com/saraswati-js/utilities/issues",
+  "bin": {
+    "@saraswati-js:tags": "./index.js"
+  },
+  "scripts": {
+    "test": "echo implement me please"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@saraswati-js/demo-content": "1.1.1"
+  }
+}
