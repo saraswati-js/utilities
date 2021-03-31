@@ -12,7 +12,7 @@
     "build": "lerna run build",
     "pub": "lerna publish",
     "test": "lerna run test",
-    "todo": "leasot -x --reporter markdown './**/*.js' -i 'node_modules/**/*' > TODO.md"
+    "todo": "npx leasot -x --reporter markdown './**/*.js' -i '**/node_modules/**/*' > TODO.md"
   },
   "devDependencies": {
     "@nighttrax/eslint-config-tsx": "~7.0.0",
