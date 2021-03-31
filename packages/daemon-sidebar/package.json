@@ -1,6 +1,6 @@
 {
   "name": "@saraswati-js/daemon-sidebar",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "bin": {
     "@saraswati-js:sidebar": "./index.js"
