@@ -21,10 +21,9 @@ if (!args.to || !args.from) {
 }
 
 const fs = require('fs')
-const { sidebarLib } = require('../lib')
-const saraswatiDb = sidebarLib.db
+const sidebar = require('./lib/sidebar')
+const saraswatiDb = require('./lib/db')
 const db = saraswatiDb(args.from)
-const sidebar = sidebarLib.sidebar
 const data = sidebar(db)
 
-fs.writeFileSync(args.to, JSON.stringify(data, null, 2), 'utf8')
+fs.writeFileSync(args.to, JSON.stringify(data), 'utf8')
