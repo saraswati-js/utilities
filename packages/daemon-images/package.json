@@ -1,13 +1,13 @@
 {
   "name": "@saraswati-js/daemon-images",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Read markdown and modify it for ... purposes",
   "license": "MIT",
   "repository": "saraswati-js/markdown-modifier",
   "homepage": "https://github.com/saraswati-js/utilities/tree/master/packages/markdown-finder",
   "bugs": "https://github.com/saraswati-js/utilities/issues",
   "bin": {
-    "@saraswati-js:images": "./bin/daemon.images.js"
+    "@saraswati-js:images": "./lib/daemon.images.js"
   },
   "scripts": {
     "tests:live": "nodemon ./tests/live.js",
