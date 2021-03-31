@@ -7,7 +7,7 @@ module.exports = {
   urlpath: (maxMarts = 7) => {
     let paths = []
     // The number of path segments I'll make
-    const randMaxPathParts = faker.random.number({
+    const randMaxPathParts = faker.datatype.number({
       min: 3,
       max: maxMarts,
     })
@@ -15,7 +15,7 @@ module.exports = {
     // Loop through randMaxPathParts times
     for (let i = 0; i < randMaxPathParts; i++) {
       // Get a random number at each iteration
-      const segment = faker.random.number(pathParts.length)
+      const segment = faker.datatype.number(pathParts.length)
 
       paths.push(pathParts[segment])
     }
