@@ -1,4 +1,3 @@
-console.clear()
 const path = require('path')
 const normalizedPath = require('path').join(__dirname, './');
 
