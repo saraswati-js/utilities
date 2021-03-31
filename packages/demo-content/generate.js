@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-console.clear()
-
 const path = require('path')
 const yargs = require('yargs')
 const faker = require('faker')
