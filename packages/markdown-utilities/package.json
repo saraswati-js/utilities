@@ -4,13 +4,14 @@
   "description": "All the utilities that `@saraswati-js` utilizes for markdown modification and building metadata from their gray matter.",
   "main": "index.js",
   "bin": {
-    "@saraswati-js:demo-content": "echo create demo content",
-    "@saraswati-js:sidebar": "echo creates the sidebar db",
-    "@saraswati-js:tags": "echo creates the tags db",
-    "@saraswati-js:images": "echo modify markdown images"
+    "@saraswati-js:demo-content": "./bin/demo-content.js",
+    "@saraswati-js:sidebar": "./bin/sidebar.js",
+    "@saraswati-js:tags": "./bin/tags.js",
+    "@saraswati-js:images": "./bin/images.js"
   },
   "scripts": {
-    "demo-content": "demo-content --count=5 --dir=./_posts",
+    "demo-content": "demo-content --count=5 --dir=./_fixtures/_posts",
+    "fixtures:empty": "rm -rf ./_fixtures/_posts ./_fixtures/sidebar.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

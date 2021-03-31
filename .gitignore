@@ -4,3 +4,8 @@ results
 .nyc_output
 *.tsbuildinfo
 .DS_Store
+
+
+**/_fixtures/_posts/
+**/_fixtures/sidebar.json
+

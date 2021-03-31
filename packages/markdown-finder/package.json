@@ -3,6 +3,9 @@
   "version": "1.0.3",
   "description": "",
   "main": "index.js",
+  "bin": {
+    "@saraswati-js:gen-sidebar": ""
+  },
   "scripts": {
     "demo": "./demo.js",
     "save-todos": "leasot -x --reporter markdown './**/*.js' -i 'node_modules/**/*' > TODO.md",
@@ -20,6 +23,7 @@
     "front-matter-markdown": "^0.4.4",
     "klaw-sync": "^6.0.0",
     "leasot": "^10.4.0",
+    "node-json-db": "^1.3.0",
     "remark-stringify": "^9.0.1",
     "uuid": "^8.0.0",
     "yaml": "^1.9.2"
