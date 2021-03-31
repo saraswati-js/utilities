@@ -5,7 +5,7 @@ const klaw = require('klaw')
 const path = require('path')
 const chalk = require('chalk')
 const yargs = require('yargs')
-const { managed: { move } } = require('..')
+const { managed: { move } } = require('.')
 
 const START_DIR = yargs.argv.startdir
 const PUBLIC_DIR = yargs.argv.public

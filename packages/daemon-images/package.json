@@ -7,7 +7,7 @@
   "homepage": "https://github.com/saraswati-js/utilities/tree/master/packages/markdown-finder",
   "bugs": "https://github.com/saraswati-js/utilities/issues",
   "bin": {
-    "@saraswati-js:images": "./index.js"
+    "@saraswati-js:images": "./bin/daemon.images.js"
   },
   "scripts": {
     "tests:live": "nodemon ./tests/live.js",
