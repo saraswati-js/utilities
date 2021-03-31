@@ -3,10 +3,11 @@
 // TODO: Add validation for each property
 const fs = require('fs')
 const YAML = require('yaml')
+const path = require('path')
 
 module.exports = (frontmatter) => {
-  // TODO: Memoize, or pass it in ala Redux
-  const file = fs.readFileSync('./lib/data/defaults.yml', 'utf8')
+  const yamlPath = path.join(__dirname, '..', 'data/defaults.yml')
+  const file = fs.readFileSync(yamlPath, 'utf8')
   const defaults = YAML.parse(file)
 
   if (!frontmatter.title) {
