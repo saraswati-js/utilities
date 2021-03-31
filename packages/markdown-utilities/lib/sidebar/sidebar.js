@@ -1,3 +1,7 @@
+// TODO: This is 2 for loops. Might not wanna do that?
+// 
+// Adapted from: https://gist.github.com/stephanbogner/4b590f992ead470658a5ebf09167b03d
+// https://jrsinclair.com/articles/2019/functional-js-traversing-trees-with-recursive-reduce/
 /**
  * Build the sidebar.
  * 
@@ -22,7 +26,6 @@ const findWhere = (array, key, value) => {
 // TODO: Sidebar should filter by projects
 // TODO: Add next previous links here ... somehow. Or ask someone todo this for me ... :'(
 module.exports = (paths) => {
-  // Adapted from http://brandonclapp.com/arranging-an-array-of-flat-paths-into-a-json-tree-like-structure/
   var tree = [];
 
   const iterator = Object.keys(paths)
