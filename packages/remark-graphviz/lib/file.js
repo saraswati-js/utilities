@@ -9,7 +9,7 @@ function plugin() {
     new Promise(async (resolve, reject) => {
       const nodesToChange = []
       visit(tree, 'code', node => {
-        if (node.lang !== 'graphiz') {
+        if (node.lang !== 'graphviz') {
           return
         }
 

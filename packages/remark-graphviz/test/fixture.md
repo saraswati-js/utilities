@@ -12,9 +12,7 @@ Alice <-- Bob: Another authentication Response
 @enduml
 ```
 
-
 ------------------------------------------------------------------------------------------------------------------------------
-
 
 ```graphviz
 @startuml
@@ -33,5 +31,3 @@ Object05 o-- "4" Object06
 Object07 .. Object08 : some labels
 @enduml
 ```
-
-*Emphasis* and **importance**

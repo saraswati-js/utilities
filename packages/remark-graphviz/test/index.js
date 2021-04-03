@@ -7,8 +7,7 @@ const deets = fs.readFileSync(path.join(__dirname, './fixture.md'), 'utf8')
 
 remark()
   .use(pluginChooser('inline'))
-  .data('settings', { emphasis: '*', strong: '*' })  
   .process(deets, function (err, file) {
     if (err) throw err
-    console.log(String(file))
+    fs.writeFileSync(path.join(__dirname, './fixture.remade.md'), file, 'utf8')
   })

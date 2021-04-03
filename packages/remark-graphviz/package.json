@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "tests:cleanup": "rm test/*.svg",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/index.js"
   },
   "publishConfig": {
     "access": "public"
@@ -13,11 +13,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "metalsmith-plantuml": "^0.0.4",
     "plantuml": "^0.0.1",
-    "rehype-parse": "^7.0.1",
-    "rehype-remark": "^8.0.0",
-    "remark": "^13.0.0",
+    "remark": "^11.0.2",
     "svg64": "^1.1.0",
     "unified": "^9.2.1",
     "unified-stream": "^1.0.6",
