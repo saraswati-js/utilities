@@ -2,6 +2,7 @@
   "name": "@saraswati-js/remark-graphiz",
   "version": "0.0.1",
   "description": "",
+  "main": "./index.js",
   "scripts": {
     "tests:cleanup": "rm test/*.svg",
     "test": "node test/index.js"
