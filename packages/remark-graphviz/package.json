@@ -1,0 +1,23 @@
+{
+  "name": "@saraswati-js/remark-graphiz",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./index.js",
+  "scripts": {
+    "tests:cleanup": "rm test/*.svg",
+    "tests": "node tests/live.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "plantuml": "^0.0.1",
+    "remark": "^11.0.2",
+    "svg64": "^1.1.0",
+    "unified": "^9.2.1",
+    "uuid": "^8.3.2"
+  }
+}
